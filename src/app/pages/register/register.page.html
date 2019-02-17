@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>Register</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref=""></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <form (ngSubmit)="register(registerForm)" #registerForm="ngForm" novalidate>
+        <ion-list inset>
+
+            <ion-item>
+                <ion-input type="text" #displayName="ngModel" placeholder="Name" [(ngModel)]="credential.displayName" name="displayName" required></ion-input>
+            </ion-item>
+
+            <ion-text color="danger">
+                <p [hidden]="displayName.valid || submitted == false" padding-left>
+                    Name is required
+                </p>
+            </ion-text>
+
+            <ion-item>
+                <ion-input type="email" #email="ngModel" placeholder="Email" [(ngModel)]="credential.email" name="email" required></ion-input>
+            </ion-item>
+
+            <ion-text color="danger">
+                <p [hidden]="email.valid || submitted == false" padding-left>
+                    Email is required
+                </p>
+            </ion-text>
+
+            <ion-item>
+                <ion-input type="password" #password="ngModel" placeholder="Password" [(ngModel)]="credential.password" name="password" required></ion-input>
+            </ion-item>
+
+            <ion-text color="danger">
+                <p [hidden]="password.valid || submitted == false" padding-left>
+                    Password is required
+                </p>
+            </ion-text>
+
+        </ion-list>
+
+        <div padding-horizontal>
+            <ion-button color="dark" expand="full" type="submit">Register</ion-button>
+        </div>
+    </form>
+
+</ion-content>

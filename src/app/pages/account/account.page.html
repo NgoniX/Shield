@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>Account</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref=""></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-button (click)="addAcount()">
+                <ion-icon slot="icon-only" name="add-circle"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list>
+        <ion-item-sliding *ngFor="let acount of accounts">
+            <ion-item ion-item (click)="edtAcount(acount.key)">
+                {{acount.description}}
+            </ion-item>
+            <ion-item-options>
+                <ion-button color="danger" expand="full" (click)="delete(acount)">Delete</ion-button>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+
+</ion-content>

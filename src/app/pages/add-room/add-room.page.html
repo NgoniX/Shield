@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>Add Room</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref=""></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <form (ngSubmit)="addRoom()">
+        <ion-list>
+            <ion-item>
+                <ion-label position="floating">Enter Room Name</ion-label>
+                <ion-input type="text" [(ngModel)]="data.roomname" name="roomname" required=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-button color="dark" expand="full" type="submit">Add</ion-button>
+            </ion-item>
+        </ion-list>
+    </form>
+</ion-content>

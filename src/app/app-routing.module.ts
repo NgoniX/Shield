@@ -9,12 +9,16 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
+    loadChildren: './pages/home/home.module#HomePageModule'
   },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  }
+  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
+  { path: 'signin', loadChildren: './pages/signin/signin.module#SigninPageModule' },
+  { path: 'room', loadChildren: './pages/room/room.module#RoomPageModule' },
+  { path: 'add-room', loadChildren: './pages/add-room/add-room.module#AddRoomPageModule' },
+  { path: 'account-add', loadChildren: './pages/account-add/account-add.module#AccountAddPageModule' },
+  { path: 'account', loadChildren: './pages/account/account.module#AccountPageModule' },
+  { path: 'register', loadChildren: './pages/register/register.module#RegisterPageModule' },
+  { path: 'chat', loadChildren: './pages/chat/chat.module#ChatPageModule' }
 ];
 
 @NgModule({
