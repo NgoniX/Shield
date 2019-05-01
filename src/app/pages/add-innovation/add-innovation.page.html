@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>Add Innovation</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref=""></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-input placeholder="Enter Name" [(ngModel)]="innName"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-input placeholder="Enter Phone No. eg 0773123456" [(ngModel)]="innPhone"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-input placeholder="Enter Description" [(ngModel)]="innDescription"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col text-center>
+                <ion-button (click)="CreateRecord()" [disabled]="!innName || !innDescription || !innPhone">
+                    <ion-icon size="small" slot="icon-only" name="add"></ion-icon>
+                    &nbsp;Add Innovation
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>

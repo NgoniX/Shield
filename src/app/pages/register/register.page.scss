@@ -1,0 +1,39 @@
+ion-select.access-level {
+    width: 70%;
+    max-width: 70%;
+    background-color: #eee;
+    border-radius: 10px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+}
+
+ion-input {
+    background-color: #eee;
+    border-radius: 10px;
+    width: 100%;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+}
+
+.icon-input {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    padding-right: 10px;
+    bottom: 0;
+    font-size: 18px;
+    min-width: 0 !important;
+    text-align: left !important;
+    color: #00b1ff;
+}
+
+form {
+    margin-top: 10%;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 10px;
+}

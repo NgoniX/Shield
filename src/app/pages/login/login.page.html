@@ -1,9 +1,6 @@
 <ion-header>
     <ion-toolbar color="primary">
-        <ion-title>Login</ion-title>
-        <ion-buttons slot="start">
-            <ion-back-button defaultHref=""></ion-back-button>
-        </ion-buttons>
+        <ion-title>VCIC</ion-title>
     </ion-toolbar>
 </ion-header>
 
@@ -13,6 +10,9 @@
         <ion-list inset>
 
             <ion-item>
+                <ion-label>
+                    <ion-icon class="icon-input" name="mail"></ion-icon>
+                </ion-label>
                 <ion-input type="email" #email="ngModel" placeholder="Email" [(ngModel)]="credential.email" name="email" required></ion-input>
             </ion-item>
 
@@ -23,6 +23,9 @@
             </ion-text>
 
             <ion-item>
+                <ion-label>
+                    <ion-icon class="icon-input" name="lock"></ion-icon>
+                </ion-label>
                 <ion-input type="password" #password="ngModel" placeholder="Password" [(ngModel)]="credential.password" name="password" required></ion-input>
             </ion-item>
 
@@ -35,7 +38,7 @@
         </ion-list>
 
         <div padding-horizontal>
-            <ion-button color="dark" expand="full" type="submit">Login</ion-button>
+            <ion-button color="primary" expand="block" type="submit">Login</ion-button>
             <p class="format-text">-- OR --</p>
             <p align="center"><a class="link-format" [routerLink]="'/register'" routerDirection="forward">Don't Have Account? Register</a></p>
         </div>

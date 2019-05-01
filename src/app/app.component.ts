@@ -23,51 +23,6 @@ export class AppComponent {
       icon: 'contact'
     },
     {
-      title: 'Billing',
-      url: '/home',
-      icon: 'card'
-    },
-    {
-      title: 'Share',
-      url: '/home',
-      icon: 'share-alt'
-    },
-    {
-      title: 'Lawyers Forum',
-      url: '/home',
-      icon: 'information-circle'
-    },
-    {
-      title: 'Feedback',
-      url: '/home',
-      icon: 'chatboxes'
-    },
-    {
-      title: 'Client Testimonials',
-      url: '/home',
-      icon: 'quote'
-    },
-    {
-      title: 'Legal Resources',
-      url: '/home',
-      icon: 'clipboard'
-    },
-    {
-      title: 'Newsletter',
-      url: '/home',
-      icon: 'contacts'
-    },
-    {
-      title: 'Disclaimer',
-      url: '/home',
-      icon: 'folder'
-    },
-    {
-      title: 'Privacy Policy',
-      url: '/home',
-      icon: 'document'
-    },
-    {
       title: 'Website',
       url: '/home',
       icon: 'globe'
@@ -94,7 +49,7 @@ export class AppComponent {
   // logout
     logout() {
       this.auth.logout();
-      this.router.navigate(['home']);
+      this.router.navigate(['login']);
     }
 
 }

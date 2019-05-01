@@ -41,7 +41,7 @@ export class LoginPage implements OnInit {
         .then(res => {
           console.log(res);
           this.dismiss();
-          this.router.navigateByUrl('/home');
+          this.router.navigateByUrl('/innovations');
         }, err => {
           console.log(err);
           this.dismiss();
@@ -69,7 +69,7 @@ export class LoginPage implements OnInit {
   async present() {
     this.isLoading = true;
     return await this.loading.create({
-      duration: 3000,
+      duration: 9000,
     }).then(a => {
       a.present().then(() => {
         console.log('presented');

@@ -7,3 +7,31 @@ a.link-format {
     text-align: center;
     text-decoration: none;
 }
+
+ion-title {
+    text-align: center
+}
+
+ion-input {
+    background-color: #eee;
+    border-radius: 10px;
+    width: 100%;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+}
+
+.icon-input {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    padding-right: 10px;
+    bottom: 0;
+    font-size: 18px;
+    min-width: 0 !important;
+    text-align: left !important;
+    color: #00b1ff;
+}
+
+form {
+    margin-top: 20%;
+}
